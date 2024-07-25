@@ -64,7 +64,7 @@ public class PsqlLogger implements RequestDataListener, ApplicationListener<Appl
         		url = System.getenv("POSTGRESQL_LOGGING_URL");
             } else {
                 url = props.getProperty("postgres.host");
-			}
+	    }
             conn_prop = new Properties();
             
             if (System.getenv("POSTGRESQL_LOGGING_USER") != null) {
